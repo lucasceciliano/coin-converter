@@ -70,7 +70,9 @@ export const Button = styled.Button`
 `;
 
 export const TextResult = styled.Text`
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
     color: #fff;
 `;
