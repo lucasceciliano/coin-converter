@@ -27,11 +27,9 @@ export function Page(){
   
 
   const handleCalcValue = () => {
-
     
     setPrice( () => parseFloat(value) / priceDolar  )
-    
-    console.log(setPrice)
+
 
   }
 
@@ -49,7 +47,7 @@ export function Page(){
         <Title>Digite um valor:</Title>
 
         <ToInvolveInput>
-        <TextInput placeholder='Digite um valor' keyboardType='numeric' onChangeText={setValue} ></TextInput>
+        <TextInput placeholder='Digite um valor' onChangeText={setValue} ></TextInput>
         <Price>1 Dólar = 4,83 reais </Price>
         </ToInvolveInput>
 
@@ -64,7 +62,7 @@ export function Page(){
         </ButtonConverter>
 
         
-          <TextResult>USD {price}</TextResult>
+          <TextResult>USD {price.toFixed(2)}</TextResult>
        
 
         </Content>
